@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AeroVista Media | Elevate Your Vision</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f7f9fb;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to right, #001f3f, #0074d9);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .service {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      width: 280px;
+      transition: transform 0.3s ease;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+    }
+    .service img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    footer {
+      background: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    a {
+      color: #0074d9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact-links a {
+      margin: 0 10px;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌤 AeroVista Media</h1>
+    <p>Elevate your vision. Capture every angle.</p>
+  </header>
+
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <img src="drone1.jpg" alt="Drone Footage">
+        <h3>Drone Footage</h3>
+        <p>4K aerial video for real estate, events, and promotional content.</p>
+      </div>
+      <div class="service">
+        <img src="realestate1.jpg" alt="Real Estate Videos">
+        <h3>Real Estate Videos</h3>
+        <p>Showcase properties from breathtaking perspectives that sell.</p>
+      </div>
+      <div class="service">
+        <img src="editing1.jpg" alt="After Effects Editing">
+        <h3>After Effects Editing</h3>
+        <p>Professional motion graphics and cinematic video editing services.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>Ready to elevate your next project?</p>
+    <p>Email: <a href="devilliersgerrin@gmail.com">devilliersgerrin@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/+48451592729" target="_blank">+48 451 592 729</a></p>
+    <p>Instagram: <a href="https://instagram.com/aerovistamedia" target="_blank">@aerovistamedia</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 AeroVista Media | Warsaw, Poland</p>
+    <div class="contact-links">
+      <a href="mailto:devilliersgerrin@gmail.com">Email</a> |
+      <a href="https://wa.me/48451592729">WhatsApp</a> |
+      <a href="https://instagram.com/aerovistamedia">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    // Simple scroll fade-in animation
+    const services = document.querySelectorAll('.service');
+    window.addEventListener('scroll', () => {
+      services.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
